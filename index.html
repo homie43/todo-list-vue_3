@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>todo-list</title>
+    <title>ToDo-list on Vue.js v.3</title>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;700&display=swap" rel="stylesheet">
@@ -12,6 +12,46 @@
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    
+    <div class="header">
+        <div class="container">
+            <div class="logo">Todo List</div>
+            <div class="form">
+                <input type="text">
+                <button class="btn">Add a new task</button>
+            </div>
+        </div>
+    </div>
+
+    <div class="container">
+        <h2>
+            <span>To Do</span>
+            <span class="mask-num">10</span>
+        </h2>
+        <ul class="mask-list">
+            <li>
+                <div>
+                    <input type="checkbox">
+                    <span>learn to react</span>
+                </div>
+                <button class="btn-remove">Remove</button>
+            </li>
+        </ul>
+        <h2>
+            <span>Done</span>
+            <span class="mask-num">8</span>
+        </h2>
+        <ul class="mask-list complete-list">
+            <li>
+                <div>
+                    <input type="checkbox" checked>
+                    <span>add code</span>
+                </div>
+                <button class="btn-remove">Remove</button>
+            </li>
+        </ul>
+    </div>
+
+    <script src="https://unpkg.com/vue@next"></script>
+    <script src="app.js"></script>
 </body>
 </html>
