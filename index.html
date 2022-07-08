@@ -12,43 +12,46 @@
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <div class="header">
-        <div class="container">
-            <div class="logo">Todo List</div>
-            <div class="form">
-                <input type="text">
-                <button class="btn">Add a new task</button>
+    
+    <div id="app">
+        <div class="header">
+            <div class="container">
+                <div class="logo">Todo List</div>
+                <div class="form">
+                    <input type="text" v-bind:value="valueInput">
+                    <button class="btn">Add a new task</button>
+                </div>
             </div>
         </div>
-    </div>
-
-    <div class="container">
-        <h2>
-            <span>To Do</span>
-            <span class="mask-num">10</span>
-        </h2>
-        <ul class="mask-list">
-            <li>
-                <div>
-                    <input type="checkbox">
-                    <span>learn to react</span>
-                </div>
-                <button class="btn-remove">Remove</button>
-            </li>
-        </ul>
-        <h2>
-            <span>Done</span>
-            <span class="mask-num">8</span>
-        </h2>
-        <ul class="mask-list complete-list">
-            <li>
-                <div>
-                    <input type="checkbox" checked>
-                    <span>add code</span>
-                </div>
-                <button class="btn-remove">Remove</button>
-            </li>
-        </ul>
+    
+        <div class="container">
+            <h2>
+                <span>To Do</span>
+                <span class="mask-num">10</span>
+            </h2>
+            <ul class="mask-list">
+                <li>
+                    <div>
+                        <input type="checkbox">
+                        <span>learn to react</span>
+                    </div>
+                    <button class="btn-remove">Remove</button>
+                </li>
+            </ul>
+            <h2>
+                <span>Done</span>
+                <span class="mask-num">8</span>
+            </h2>
+            <ul class="mask-list complete-list">
+                <li>
+                    <div>
+                        <input type="checkbox" checked>
+                        <span>add code</span>
+                    </div>
+                    <button class="btn-remove">Remove</button>
+                </li>
+            </ul>
+        </div>
     </div>
 
     <script src="https://unpkg.com/vue@next"></script>
