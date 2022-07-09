@@ -28,6 +28,7 @@ h2 .mask-num {
 }
   
 .header {
+    background-color: #333;
     padding: 10px 0;
     margin-bottom: 40px;
 }
@@ -69,9 +70,9 @@ h2 .mask-num {
 }
 
 .btn {
-    background-color: #343a40;
-    border: 1px solid #17a2b8;;
-    color: #17a2b8;;
+    background-color: #12c0dd;
+    border: 1px solid #12c0dd;
+    color: #fff;
     font-weight: 700;
     text-transform: uppercase;
     padding: 10px 15px;
@@ -82,8 +83,8 @@ h2 .mask-num {
 }
 
 .btn:hover {
-    background-color: #17a2b8;
-    border-color: #17a2b8;
+    background-color: #0dd6f8;
+    border-color: #0dd6f8;
 }
 
 .mask-list li {
