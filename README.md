@@ -1,1 +1,2 @@
-# A simple ToDo App on Vue 3
+# A simple ToDo List App on Vue 3
+-
