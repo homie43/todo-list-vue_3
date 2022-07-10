@@ -28,7 +28,7 @@ h2 .mask-num {
 }
   
 .header {
-    background-color: #333;
+    background-color: #343a40;
     padding: 10px 0;
     margin-bottom: 40px;
 }
@@ -70,9 +70,10 @@ h2 .mask-num {
 }
 
 .btn {
-    background-color: #12c0dd;
-    border: 1px solid #12c0dd;
-    color: #fff;
+    background-color: transparent;
+    border: 1px solid #17a2b8;
+    border-radius: 7px;
+    color: #17a2b8;
     font-weight: 700;
     text-transform: uppercase;
     padding: 10px 15px;
@@ -83,8 +84,10 @@ h2 .mask-num {
 }
 
 .btn:hover {
-    background-color: #0dd6f8;
-    border-color: #0dd6f8;
+    background-color: #17a2b8;
+    border-color: #17a2b8;
+    color: #fff;
+    cursor: pointer;
 }
 
 .mask-list li {
@@ -187,4 +190,37 @@ input[type="checkbox"]:not(:checked) + span::after{
     left: 4px;
     top: calc(50% - 6px);
     background-color: #7d25a9;
+}
+
+@media (max-width: 1200px) {
+    .container {
+        max-width: 700px;
+        /* padding-left: 0px;
+        padding-right: 0px; */
+        margin: 0 0;
+    }
+}
+
+@media (max-width: 576px) {
+    .container {
+        max-width: 400px;
+    }
+
+    .header .container {
+        justify-content: space-around;
+    }
+
+    .header .container .form input {
+        width: 125px;
+    }
+
+    .header .container .logo {
+        font-size: 19px;
+    }
+
+    .btn {
+        width: 100px;
+        padding: 10px 2px;
+        font-size: 10px;
+    }
 }
